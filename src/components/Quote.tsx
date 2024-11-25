@@ -43,19 +43,21 @@ export default function Quote() {
 
   if (error || !quote) {
     return (
-      <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg shadow-lg p-6">
-        <div className="flex gap-4 items-center">
-          <QuoteIcon size={24} className="flex-shrink-0" />
-          <p className="text-lg">Wisdom loading... Stay tuned!</p>
-          <button
-            onClick={fetchQuote}
-            className="ml-auto p-2 hover:bg-white/10 rounded-full transition-colors"
-          >
-            <RefreshCw size={20} />
-          </button>
-        </div>
-      </div>
-    );
+			<div className='bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg shadow-lg p-6'>
+				<div className='flex gap-4 items-center'>
+					<QuoteIcon size={24} className='flex-shrink-0' />
+					<p className='text-lg'>
+						Wisdom loading... <p>Developed by Mustafa Hussaini</p>
+					</p>
+					<button
+						onClick={fetchQuote}
+						className='ml-auto p-2 hover:bg-white/10 rounded-full transition-colors'
+					>
+						<RefreshCw size={20} />
+					</button>
+				</div>
+			</div>
+		);
   }
 
   return (

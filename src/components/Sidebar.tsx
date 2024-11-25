@@ -30,7 +30,8 @@ export default function Sidebar({ activeSection, setActiveSection }: SidebarProp
         className="flex items-center gap-2 mb-8"
       >
         <Layout className="h-8 w-8" />
-        <h1 className="text-xl font-bold">Productivity Hub</h1>
+        <h1 className="text-xl font-bold">Task Dashboard</h1>
+        
       </motion.div>
       
       <nav className="space-y-2">
